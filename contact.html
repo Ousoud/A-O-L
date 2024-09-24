@@ -1,0 +1,56 @@
+<!DOCTYPE html>
+<html lang="ar">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>استمارة التسجيل</title>
+    <link rel="icon" type="image/png" href="osod.png">
+    <link rel="stylesheet" href="2.css">
+</head>
+<body>
+    <form action="#" method="post">
+        <label for="name">الاسم:</label>
+        <input type="text" id="name" name="name" required><br><br>
+
+        <label for="nickname">النسب:</label>
+        <input type="text" id="nickname" name="nickname" required><br><br>
+
+        <label for="birthday">تاريخ الميلاد:</label>
+        <input type="date" id="birthday" name="birthday" required><br><br>
+
+        <label for="gender">الصنف:</label><br>
+        <input type="radio" id="male" name="gender" value="ذكر" required>
+        <label for="male">ذكر</label><br>
+        <input type="radio" id="female" name="gender" value="أنثى" required>
+        <label for="female">أنثى</label><br><br>
+
+        <label for="sport">الرياضة المطلوبة:</label>
+        <select id="sport" name="sport" required>
+            <option value="تايكواندو">تايكواندو</option>
+            <option value="الأيروبيك">الأيروبيك</option>
+            <option value="الإعداد البدني الشخصي">الإعداد البدني الشخصي</option>
+            <option value="اللياقة البدنية الجماعية">اللياقة البدنية الجماعية</option>
+        </select><br><br>
+
+        <input type="submit" value="تسجيل">
+    </form>
+
+   
+    <audio id="audio" src="hi.mp3"></audio>
+
+    <script>
+      
+        const nameInput = document.getElementById('name');
+        const audio = document.getElementById('audio');
+
+     
+        nameInput.addEventListener('focus', function() {
+        
+            if (audio.paused) {
+                audio.play();
+            }
+        });
+    </script>
+     <script src="2.js"></script>
+</body>
+</html>
