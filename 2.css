@@ -1,4 +1,4 @@
-/* Reset default browser styles */
+
 * {
     margin: 0;
     padding: 0;
@@ -6,9 +6,9 @@
 }
 
 body {
-    font-family: 'Tajawal', sans-serif; /* Professional and clean Arabic font */
-    background: linear-gradient(135deg, #000000, #1a1a1a); /* Dark gradient for a modern look */
-    color: #ffc107; /* Gold text color */
+    font-family: 'Tajawal', sans-serif; 
+    background: linear-gradient(135deg, #000000, #1a1a1a); 
+    color: #ffc107; 
     text-align: right;
     padding: 40px;
 }
