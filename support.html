@@ -1,35 +1,61 @@
 <!DOCTYPE html>
-<html lang="ar">
+
+<html lang="en">
 <head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>فريق الدعم</title>
-    <link rel="icon" type="image/png" href="osod.png">
-    <link rel="stylesheet" href="4.css"> 
-    <link href="https://fonts.googleapis.com/css?family=Open+Sans" rel="stylesheet">
-    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/malihu-custom-scrollbar-plugin/3.1.3/jquery.mCustomScrollbar.min.css"> <!-- Link to Malihu Scrollbar CSS -->
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Younes Ai</title>
+
+  <link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Material+Symbols+Rounded:opsz,wght,FILL,GRAD@24,400,0,0" />
+  <link rel="stylesheet" href="4.css">
 </head>
 <body>
-    <div class="chat">
-        <div class="chat-title">
-            <h1>Younes Ksassoua</h1>
-            <h2>فريق الدعم</h2>
-            <figure class="avatar">
-                <img src="yk.jpg" alt="صورة يونس كساسو" />
-            </figure>
-        </div>
-        <div class="messages">
-            <div class="messages-content"></div>
-        </div>
-        <div class="message-box">
-            <textarea class="message-input" placeholder="اكتب رسالة..."></textarea>
-            <button type="submit" class="message-submit">أرسل</button>
-        </div>
-    </div>
-    <div class="bg"></div>
+  <header class="header">
+ 
+    <h1 class="title">Ousoud Larach AI</h1>
+    <p class="subtitle">كيف يمكنني مساعدتك اليوم</p>
 
-    <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/2.1.3/jquery.min.js"></script> <!-- jQuery 2.1.3 -->
-    <script src="https://cdnjs.cloudflare.com/ajax/libs/malihu-custom-scrollbar-plugin/3.1.3/jquery.mCustomScrollbar.concat.min.js"></script> <!-- Malihu Scrollbar JS -->
-    <script src="3.js"></script> <!-- Link to your JavaScript file -->
+
+    <ul class="suggestion-list">
+      <li class="suggestion">
+        <h4 class="text">ما هي رياضة التايكواندو؟</h4>
+        <span class="material-symbols-outlined">sports_martial_arts</span>
+      </li>
+      <li class="suggestion">
+        <h4 class="text">كيف تساهم حصص الأيروبيك الجماعية في تحسين اللياقة القلبية والتنفسية؟</h4>
+        <span class="material-symbols-outlined">sports_martial_arts</span>
+      </li>
+      <li class="suggestion">
+        <h4 class="text">إقنعني ان اشترك في هذه الجمعية الرياضية من اجل صحتي او صحة اطفالي</h4>
+        <span class="material-symbols-outlined">sports_martial_arts</span>
+      </li>
+      <li class="suggestion">
+        <h4 class="text">هل هناك نشاطات خارجية مثل البطولات أو الرحلات ضمن برنامج التايكواندو؟</h4>
+        <span class="material-symbols-outlined">sports_martial_arts</span>
+      </li>
+    </ul>
+  </header>
+
+
+  <div class="chat-list"></div>
+
+
+  <div class="typing-area">
+    <form action="#" class="typing-form">
+      <div class="input-wrapper">
+        <input type="text" placeholder="اكتب سؤالك هنا" class="typing-input" required />
+        <button id="send-message-button" class="icon material-symbols-rounded">send</button>
+      </div>
+      <div class="action-buttons">
+        <span id="theme-toggle-button" class="icon material-symbols-rounded">light_mode</span>
+        <span id="delete-chat-button" class="icon material-symbols-rounded">delete</span>
+      </div>
+    </form>
+    <p class="disclaimer-text">
+      .نرجو منكم طرح الأسئلة المتعلقة بالرياضة. تصميم وتطوير: يونس القساسوة. جميع الحقوق محفوظة
+    </p>
+  </div>
+
+  <script src="3.js"></script>
 </body>
 </html>
